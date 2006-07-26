@@ -10,8 +10,8 @@ Group:		X11/Libraries
 # cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/qextserialport login
 # cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/qextserialport \
 # 	co -P qextserialport
-Source0:	qextserialport.tgz
-URL:		http://qextserialport.sf.net/
+Source0:	%{name}.tgz
+URL:		http://qextserialport.sourceforge.net/
 BuildRequires:	QtCore
 Requires:	QtCore
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
