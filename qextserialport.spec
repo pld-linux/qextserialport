@@ -41,7 +41,7 @@ Pliki programistyczne QextSerialPort.
 %setup -q -n %{name}
 
 %build
-qmake
+qt4-qmake
 %{__make}
 
 %install
