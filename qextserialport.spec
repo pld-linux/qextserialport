@@ -4,7 +4,7 @@ Summary:	A cross-platform serial port class
 Summary(pl):	Wieloplatformowa klasa do obs³ugi portu szeregowego
 Name:		qextserialport
 Version:	1.0.0
-Release:	0.1_%{CVSSNAPSHOT}
+Release:	0.2_%{CVSSNAPSHOT}
 License:	GPL
 Group:		X11/Libraries
 # cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/qextserialport login
@@ -49,9 +49,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_includedir}
 install -d $RPM_BUILD_ROOT%{_libdir}
 
-install build/libqextserialport* $RPM_BUILD_ROOT%{_libdir}
+cp -a build/libqextserialport.so* $RPM_BUILD_ROOT%{_libdir}
 install *.h $RPM_BUILD_ROOT%{_includedir}
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
