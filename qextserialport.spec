@@ -1,7 +1,7 @@
 %define		CVSSNAPSHOT	20060112
 
 Summary:	A cross-platform serial port class
-Summary(pl):	Wieloplatformowa klasa do obs≥ugi portu szeregowego
+Summary(pl.UTF-8):   Wieloplatformowa klasa do obs≈Çugi portu szeregowego
 Name:		qextserialport
 Version:	1.0.0
 Release:	0.2_%{CVSSNAPSHOT}
@@ -20,21 +20,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 QextSerialPort is a cross-platform serial port class. This class
 encapsulates a serial port on both POSIX and Windows systems.
 
-%description -l pl
-QextSerialPort to wieloplatformowa klasa do obs≥ugi portu szeregowego.
-Obudowuje obs≥ugÍ portu szeregowego na systemach zgodnych z POSIX oraz
+%description -l pl.UTF-8
+QextSerialPort to wieloplatformowa klasa do obs≈Çugi portu szeregowego.
+Obudowuje obs≈Çugƒô portu szeregowego na systemach zgodnych z POSIX oraz
 Windows.
 
 %package devel
 Summary:	QextSerialPort development files
-Summary(pl):	Pliki programistyczne QextSerialPort
+Summary(pl.UTF-8):   Pliki programistyczne QextSerialPort
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 QextSerialPort development files.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Pliki programistyczne QextSerialPort.
 
 %prep
