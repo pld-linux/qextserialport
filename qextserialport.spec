@@ -1,7 +1,7 @@
 %define		CVSSNAPSHOT	20060112
 
 Summary:	A cross-platform serial port class
-Summary(pl.UTF-8):   Wieloplatformowa klasa do obsługi portu szeregowego
+Summary(pl.UTF-8):	Wieloplatformowa klasa do obsługi portu szeregowego
 Name:		qextserialport
 Version:	1.0.0
 Release:	0.2_%{CVSSNAPSHOT}
@@ -27,7 +27,7 @@ Windows.
 
 %package devel
 Summary:	QextSerialPort development files
-Summary(pl.UTF-8):   Pliki programistyczne QextSerialPort
+Summary(pl.UTF-8):	Pliki programistyczne QextSerialPort
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
