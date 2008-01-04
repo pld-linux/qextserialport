@@ -12,8 +12,8 @@ Group:		X11/Libraries
 # 	co -P qextserialport
 Source0:	%{name}.tgz
 URL:		http://qextserialport.sourceforge.net/
-BuildRequires:	QtCore
-Requires:	QtCore
+BuildRequires:	QtCore-devel
+BuildRequires:	qt4-qmake >= 4.3.3-3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,6 +30,7 @@ Summary:	QextSerialPort development files
 Summary(pl.UTF-8):	Pliki programistyczne QextSerialPort
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	QtCore-devel
 
 %description devel
 QextSerialPort development files.
@@ -41,7 +42,7 @@ Pliki programistyczne QextSerialPort.
 %setup -q -n %{name}
 
 %build
-qt4-qmake
+qmake-qt4
 %{__make}
 
 %install
