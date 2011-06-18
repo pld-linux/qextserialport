@@ -11,6 +11,7 @@ Group:		Libraries
 # cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/qextserialport \
 # 	co -P qextserialport
 Source0:	%{name}.tgz
+# Source0-md5:	4ce794658c5467d06266417bcdd0ca2a
 URL:		http://qextserialport.sourceforge.net/
 BuildRequires:	QtCore-devel
 BuildRequires:	qt4-qmake >= 4.3.3-3
